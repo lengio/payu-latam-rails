@@ -6,3 +6,4 @@ tags
 /.bundle/
 coverage/
 .rspec_status
+spec/dummy/log/*.log

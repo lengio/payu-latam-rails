@@ -16,7 +16,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "activesupport", ">= 3.1"
   spec.add_dependency "payu-latam", "~> 1.0"
 
-  spec.add_development_dependency "appraisal"
   spec.add_development_dependency "byebug", "~> 10.0"
   spec.add_development_dependency "coveralls", "~> 0"
   spec.add_development_dependency "pry", "~> 0.12"
@@ -28,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "webmock", "~> 1.9"
 
   spec.files = `git ls-files`.split("\n")
-  spec.test_files    = `git ls-files -- spec/*`.split("\n")
-  spec.executables   = `git ls-files -- bin/*`.split("\n").map { |f| ::File.basename(f) }
+  spec.test_files = `git ls-files -- spec/*`.split("\n")
+  spec.executables = `git ls-files -- bin/*`.split("\n").map { |f| ::File.basename(f) }
   spec.require_paths = ["lib"]
 end

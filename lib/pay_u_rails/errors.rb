@@ -1,2 +1,3 @@
-class PayURails::SignatureVerificationError < StandardError
+module PayURails
+  class SignatureVerificationError < StandardError; end
 end

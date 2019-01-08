@@ -1,3 +1,4 @@
+require "active_support/notifications"
 require "pay_u"
 
 require "pay_u_rails/errors"

@@ -1,3 +1,5 @@
-class PayURails::Engine < ::Rails::Engine
-  isolate_namespace PayURails
+module PayURails
+  class Engine < ::Rails::Engine
+    isolate_namespace PayURails
+  end
 end

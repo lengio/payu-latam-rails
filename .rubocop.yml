@@ -25,9 +25,6 @@ Style/SymbolArray:
 Style/WordArray:
   EnforcedStyle: brackets
 
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
-
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: true
   EnforcedStyle: no_space
@@ -64,9 +61,6 @@ Style/TrailingCommaInHashLiteral:
 
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
-
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
 
 Metrics/ParameterLists:
   Max: 5

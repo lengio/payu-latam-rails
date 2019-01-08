@@ -1,0 +1,8 @@
+/payu-latam-rails-*.gem
+/Gemfile.lock
+.rvmrc
+Gemfile.lock
+tags
+/.bundle/
+coverage/
+.rspec_status

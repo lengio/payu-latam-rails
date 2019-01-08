@@ -1,5 +1,8 @@
 # PayU Latam Rails Library
 
+[![CircleCI](https://circleci.com/gh/lengio/payu-latam-rails.svg?style=svg)](https://circleci.com/gh/lengio/payu-latam-rails)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b497ad8d66bf768501f4/maintainability)](https://codeclimate.com/github/lengio/payu-latam-rails/maintainability)
+
 ## Installation
 
     gem "payu-latam-rails", github: "lengio/payu-latam-rails", require: "pay_u_rails"

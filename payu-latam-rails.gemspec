@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.license = "MIT"
 
   spec.add_dependency "activesupport", ">= 3.1"
-  # spec.add_dependency 'payu-latam'
+  spec.add_dependency "payu-latam", "~> 1.0"
 
   spec.add_development_dependency "appraisal"
   spec.add_development_dependency "byebug", "~> 10.0"

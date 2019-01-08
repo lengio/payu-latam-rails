@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rails", [">= 3.1"]
   spec.add_development_dependency "rake", "< 11.0"
   spec.add_development_dependency "rspec-rails", "~> 3.7"
+  spec.add_development_dependency "rspec_junit_formatter", "~> 0"
   spec.add_development_dependency "rubocop", "0.57"
   spec.add_development_dependency "webmock", "~> 1.9"
 

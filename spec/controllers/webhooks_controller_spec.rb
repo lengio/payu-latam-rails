@@ -35,10 +35,7 @@ RSpec.describe PayURails::WebhooksController, type: :controller do
       post :confirmation, params: params
 
       expect(response).to have_http_status(:ok)
-      expect(@confirmations.last.order).to have_attributes(
-        amount: confirmation.order.amount,
-        reference_code: confirmation.order.reference_code,
-      )
+      expect(@confirmations.last.order.attributes).to eq(confirmation.order.attributes)
     end
 
     it "returns ok and instruments event on response" do
@@ -48,10 +45,7 @@ RSpec.describe PayURails::WebhooksController, type: :controller do
       get :response_page, params: Fixtures.response
 
       expect(response).to have_http_status(:ok)
-      expect(@responses.last.order).to have_attributes(
-        amount: response_obj.order.amount,
-        reference_code: response_obj.order.reference_code,
-      )
+      expect(@responses.last.order.attributes).to eq(response_obj.order.attributes)
     end
 
     it "calls #call method when subscribing with object" do

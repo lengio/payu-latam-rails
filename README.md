@@ -10,7 +10,16 @@
     # Local
     gem build payu-latam-rails.gemspec
 
-## Subscribing with blocks
+## Usage
+
+### Mounting routes
+
+```ruby
+# config/routes.rb
+mount PayURails::Engine, at: "/pay_u", as: "pay_u"
+```
+
+### Subscribing with blocks
 
 ```ruby
 PayURails.subscribe(PayURails::Confirmation::EVENT) do |confirmation|
@@ -23,7 +32,7 @@ end
 
 ```
 
-## Subscribing with objects
+### Subscribing with objects
 
 ```ruby
 class Subscriber
